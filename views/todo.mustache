@@ -1,0 +1,30 @@
+<html>
+<head></head>
+
+<body>
+
+  <h1>To Do List</h1>
+
+
+<h4>Enter your task</h4>
+
+<form action="/newtask" method="POST">
+  task: <input type="text" name="task1" /> <br><br>
+
+  <input type="submit" />
+
+</form>
+
+<!-- starting of the loop -->
+ <ul>
+  {{#taskList}}
+
+  <li>{{task}}</li>
+
+  <!-- end of the loop -->
+  {{/taskList}}
+</ul>
+
+</body>
+
+</html>
